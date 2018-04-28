@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="500.0" minWidth="500.0" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <GridPane layoutX="56.0" layoutY="40.0" prefHeight="359.0" prefWidth="374.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="38.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="43.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="lblFN" text="First Name" />
+            <TextField fx:id="txtFN" promptText="John" GridPane.columnIndex="1" />
+            <Label fx:id="lblMN" text="Middle Initial" GridPane.rowIndex="1" />
+            <TextField fx:id="txtMN" promptText="J" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="lblLN" text="Last Name" GridPane.rowIndex="2" />
+            <TextField fx:id="txtLN" promptText="Johnson" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="lblSSN" text="Social Security Number" GridPane.rowIndex="3" />
+            <TextField fx:id="txtEmpSSN" promptText="123121234" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="lblBD" text="Birth Date" GridPane.rowIndex="4" />
+            <DatePicker fx:id="dpBD" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="txtADD" text="Address" GridPane.rowIndex="5" />
+            <TextField fx:id="txtAdd" promptText="Address" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="lblSex" prefHeight="17.0" prefWidth="76.0" text="Sex" GridPane.rowIndex="6" />
+            <Label fx:id="lblSalary" text="Salary" GridPane.rowIndex="7" />
+            <TextField fx:id="txtSalary" promptText="50000" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label fx:id="lblSupSSN" prefHeight="17.0" prefWidth="149.0" text="Supervisor SSN" GridPane.rowIndex="8" />
+            <TextField fx:id="txtSupSSN" promptText="123121234" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Label fx:id="lblDNO" text="DNO" GridPane.rowIndex="9" />
+            <TextField fx:id="txtDNO" promptText="123121234" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Label fx:id="lblEmail" text="Email - Optional" GridPane.rowIndex="10" />
+            <TextField fx:id="txtEmail" promptText="YLEE71@GMU.EDU" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <TextField fx:id="txtSex" promptText="M or F" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+         </children>
+      </GridPane>
+      <Button fx:id="InsertButton" layoutX="165.0" layoutY="442.0" mnemonicParsing="false" onAction="#Insert" text="Insert a new Employee" />
+      <Label fx:id="lblStatus2" layoutX="56.0" layoutY="410.0" prefHeight="11.0" prefWidth="374.0" text="Status" textFill="#970707" />
+   </children>
+</AnchorPane>

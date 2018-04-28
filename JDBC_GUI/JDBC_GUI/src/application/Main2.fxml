@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="500.0" minWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Label layoutX="41.0" layoutY="27.0" prefHeight="26.0" prefWidth="323.0" text="Let's assign employee to the project" />
+      <TextField fx:id="txtHours" layoutX="203.0" layoutY="302.0" prefHeight="27.0" prefWidth="129.0" promptText="Hours" />
+      <Button layoutX="360.0" layoutY="302.0" mnemonicParsing="false" text="Insert" />
+      <TableView fx:id="tblProjects" layoutX="41.0" layoutY="62.0" prefHeight="212.0" prefWidth="373.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Button layoutX="219.0" layoutY="402.0" mnemonicParsing="false" text="Submit" />
+      <Label fx:id="lblStatus3" layoutX="79.0" layoutY="353.0" prefHeight="17.0" prefWidth="281.0" text="Status" />
+      <ChoiceBox fx:id="cbPname" layoutX="53.0" layoutY="302.0" onAction="#retreive" prefHeight="27.0" prefWidth="129.0" />
+   </children>
+</AnchorPane>
